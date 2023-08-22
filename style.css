@@ -1,8 +1,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(62, 145, 253);
 }
 
-.city__input {
+.weather-app {
+    display: grid;
+    justify-content: center;
+}
+
+.weather-app__input {
     padding: 8px;
     margin: 8px;
     border: 1px solid black;
@@ -10,14 +16,14 @@ body {
     justify-content: center;
 }
 
-.search__button {
+.weather-app__button {
     padding: 8px;
     border: 1px solid black;
     border-radius: 8px;
     background-image: linear-gradient( 135deg, #72EDF2cc 20%, #5151E5cc 100%);
 }
 
-.card {
+.weather-app__information-card {
     color: white;
     padding: 32px;
     border-radius: 24px;
@@ -30,28 +36,28 @@ body {
     transition: 0.3s;
 }
 
-.card:hover {
+.weather-app__information-card:hover {
     transform: scale(1.05), perspective(1500px), rotateY('10deg');
 }
 
-.card .card__temp {
+.weather-app__weather-temp {
     font-size: 3rem;
     margin: 0;
 }
 
-.card__description {
+.weather-app__weather-description {
     margin: 0;
 }
 
-.first:first-letter {
+.weather-app__day--first-big-letter:first-letter {
     text-transform: uppercase;
 }
 
-.weather-information {
+.weather-app__information {
     display: flex;
 }
 
-.weather-details {
+.weather-app__weather-details {
     display: grid;
     align-content: space-between;
     padding: 32px 32px 32px 64px;
@@ -61,20 +67,20 @@ body {
     border-radius: 24px;
 }
 
-.otherDaysInformation {
+.weather-app__other-days-information {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.otherDaysInformation__box {
+.weather-app__other-days-information__box {
     padding: 8px;
 }
 
-.weatherValues__info {
+.weather-app__weather-info {
     display: flex;
     justify-content: space-between;
 }
 
-.d-none {
+.weather-app__information--none {
     display: none;
 }
